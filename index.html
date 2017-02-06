@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Full stack monitoring using Sensu</title>
+<meta name="author" content="(Lakshmi Narasimhan)"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="css/night.css" id="theme"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Full stack monitoring using Sensu</h1>
+<h2>Lakshmi Narasimhan</h2>
+<h2><a href="mailto:@lakshminp">@lakshminp</a></h2>
+<h2></h2>
+</section>
+
+<section id="sec-1">
+
+<h2 >About me</h2>
+<ul >
+<li class="fragment roll-in">full stack developer</li>
+<li class="fragment roll-in">been doing devops before it was termed "devops"</li>
+
+</ul>
+
+</section>
+<section id="sec-2">
+
+<h2 >Intro</h2>
+<ul >
+<li class="fragment roll-in">You need to monitor your stack, like NOW.</li>
+<li class="fragment roll-in">The open source monitoring landscape</li>
+
+</ul>
+
+</section>
+<section id="sec-3">
+
+<h2 >But why Sensu?</h2>
+
+</section>
+<section id="sec-4">
+
+<h2 >Sensu architecture</h2>
+
+<div class="figure">
+<p><img src="./images/sensu-diagram.gif" alt="sensu-diagram.gif" />
+</p>
+</div>
+
+</section>
+<section id="sec-5">
+
+<h2 >Dashboards</h2>
+</section>
+<section>
+<section id="sec-5-1">
+
+<h3 >Uchiwa</h3>
+
+<div class="figure">
+<p><img src="./images/uchiwa.png" alt="uchiwa.png" />
+</p>
+</div>
+</section>
+
+</section>
+<section>
+<section id="sec-5-2">
+
+<h3 >Graphite</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-5-3">
+
+<h3 >Graphana</h3>
+</section>
+
+</section>
+<section id="sec-6">
+
+<h2 >Sensu components</h2>
+</section>
+<section>
+<section id="sec-6-1">
+
+<h3 >Checks</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-6-2">
+
+<h3 >Handlers</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-6-3">
+
+<h3 >Filters</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-6-4">
+
+<h3 >Mutators</h3>
+</section>
+
+</section>
+<section id="sec-7">
+
+<h2 >Sensu API</h2>
+</section>
+<section>
+<section id="sec-7-1">
+
+<h3 >plugins</h3>
+</section>
+
+</section>
+<section id="sec-8">
+
+<h2 >Event handlers</h2>
+</section>
+<section>
+<section id="sec-8-1">
+
+<h3 >email, SMS and the whole 9 yards</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-8-2">
+
+<h3 >Custom handlers</h3>
+</section>
+
+</section>
+<section id="sec-9">
+
+<h2 >The ecosystem</h2>
+</section>
+<section>
+<section id="sec-9-1">
+
+<h3 >Lots of plugins</h3>
+<p>
+<a href="http://sensu-plugins.io/">http://sensu-plugins.io/</a>
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-9-2">
+
+<h3 >commercial flavour</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-9-3">
+
+<h3 >New products</h3>
+</section>
+<section id="sec-9-3-1">
+
+<h4 >Amon</h4>
+<p>
+<a href="https://www.amon.cx/">https://www.amon.cx/</a>
+</p>
+</section>
+
+</section>
+<section id="sec-10">
+
+<h2 >Examples and use cases</h2>
+</section>
+<section>
+<section id="sec-10-1">
+
+<h3 >Webapp</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-10-2">
+
+<h3 >Big data stack</h3>
+</section>
+
+</section>
+<section>
+<section id="sec-10-3">
+
+<h3 >Containers</h3>
+</section>
+
+</section>
+<section id="sec-11">
+
+<h2 >Resources</h2>
+</section>
+<section>
+<section id="sec-11-1">
+
+<h3 >The art of monitoring book</h3>
+<p>
+<a href="https://www.artofmonitoring.com/">https://www.artofmonitoring.com/</a>
+</p>
+</section>
+
+</section>
+<section>
+<section id="sec-11-2">
+
+<h3 >Deploy Sensu using Ansible</h3>
+</section>
+
+</section>
+<section id="sec-12">
+
+<h2 >?s</h2>
+</section>
+</div>
+</div>
+
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: true,
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+]
+});
+</script>
+</body>
+</html>

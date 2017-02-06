@@ -1,0 +1,86 @@
+#+STARTUP: indent
+#+STARTUP: showeverything
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_THEME: night
+#+REVEAL_HLEVEL: 2
+#+REVEAL_PLUGINS: (highlight markdown notes)
+#+OPTIONS: toc:0
+
+#+TITLE: Full stack monitoring using Sensu
+#+AUTHOR: Lakshmi Narasimhan
+#+EMAIL: @lakshminp
+
+* About me
+#+ATTR_REVEAL: :frag (roll-in roll-in roll-in roll-in)
+- full stack developer
+- been doing devops before it was termed "devops"
+
+* Intro 
+#+ATTR_REVEAL: :frag (roll-in roll-in)
+- You need to monitor your stack, like NOW.
+- The open source monitoring landscape
+
+* But why Sensu?
+
+* Sensu architecture
+
+[[./images/sensu-diagram.gif]]
+
+* Dashboards
+
+** Uchiwa
+
+[[./images/uchiwa.png]]
+
+** Graphite
+
+** Graphana
+
+* Sensu components
+
+** Checks
+
+** Handlers
+
+** Filters
+
+** Mutators
+
+* Sensu API
+
+** plugins
+
+* Event handlers
+
+** email, SMS and the whole 9 yards
+
+** Custom handlers
+
+* The ecosystem
+
+** Lots of plugins
+http://sensu-plugins.io/
+
+** commercial flavour
+
+** New products
+
+*** Amon
+https://www.amon.cx/
+
+* Examples and use cases
+
+** Webapp
+
+** Big data stack
+
+** Containers
+
+* Resources
+
+** The art of monitoring book
+https://www.artofmonitoring.com/
+
+** Deploy Sensu using Ansible
+
+* ?s
